@@ -1,3 +1,9 @@
+Game instructions:
+
+Game will load automaticaly. You don't need to do anything.
+To play the game, just control the player character with arrows (up, down, left, right). Try to avoid the bugs and get to the water. Once you raech the water, the game reset and you gain one point. But for every collision with bug, you loose one poin. Try to earn as much points as you can.
+
+
 frontend-nanodegree-arcade-game
 ===============================
 

@@ -28,7 +28,7 @@ Enemy.prototype.update = function(dt) {
     // which will ensure the game runs at the same speed for
     // all computers.
 	if (this.x < 5) {
-		console.log("this.x = " + this.x + "; this.speed: " + this.speed + "; dt:" + dt);
+		//console.log("this.x = " + this.x + "; this.speed: " + this.speed + "; dt:" + dt);
 		this.x += this.speed * dt;
 	} else {
 		this.x = 0;
@@ -50,6 +50,7 @@ var Player = function() {
 	this.y = 5;
 	this.movement = {x: 0, y: 0};
 	this.adjust = -20;
+	this.score = 0;
 };
 
 Player.prototype.render = function() {
@@ -64,6 +65,8 @@ Player.prototype.update = function() {
 	if (this.y === 0) {
 		this.x = 2;
 		this.y = 5;
+		this.score += 1;
+		display('You made it sucessfuly through! :) Your score is ' + this.score);
 	}
 };
 

@@ -23,6 +23,8 @@ var Engine = (function(global) {
         canvas = doc.createElement('canvas'),
         ctx = canvas.getContext('2d'),
         lastTime;
+	
+	
 
     canvas.width = 505;
     canvas.height = 606;
@@ -91,6 +93,10 @@ var Engine = (function(global) {
 				player.y = 5;
 				player.movement.x = 0;
 				player.movement.y = 0;
+				player.score -= 1;
+				message = "You were hit by bug!" + " Your score is " + player.score;
+				//console.log(message);
+				display(message);
 				return;
 			}
 		});

@@ -1,3 +1,22 @@
 body {
     text-align: center;
+	background-color: #cccccc;
+	font-family: 'Helvetica';
+	font-style: italic;
+}
+
+.description {
+	float: left;
+	width: 45%;
+	margin: 0 auto;
+}
+
+.game {
+	float: right;
+	width: 45%;
+	margin: 0 auto;
+}
+
+.notifications {
+	margin: 50px 0 0 0;
 }
